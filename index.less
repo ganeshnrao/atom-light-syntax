@@ -20,6 +20,9 @@ atom-text-editor, :host {
   .gutter {
     color: @syntax-gutter-text-color;
     background: @syntax-gutter-background-color;
+    .line-numbers {
+        min-width: 60px;
+    }
   }
 
   .gutter .line-number.folded,
@@ -114,6 +117,9 @@ atom-text-editor, :host {
 
 .string {
   color: #D14;
+  &.unquoted {
+      color: #d6a;
+  }
 }
 
 // String interpolation in Ruby, CoffeeScript, and others
@@ -160,6 +166,10 @@ atom-text-editor, :host {
 
   &.parameter {
     color: #606aa1;
+  }
+
+  &.property {
+      color: lighten(#008080, 10%);
   }
 }
 
