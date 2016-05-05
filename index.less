@@ -105,8 +105,11 @@ atom-text-editor, :host {
 }
 
 .comment {
-  color: #999988;
-  font-style: italic;
+  color: @mira-comment;
+  background-color: fadeout(@mira-comment, 93%);
+  &.punctuation {
+      background-color: transparent;
+  }
 }
 
 .string {
