@@ -162,14 +162,16 @@ atom-text-editor, :host {
 }
 
 .variable {
-  color: #008080;
+  color: @mira-variable;
 
   &.parameter {
     color: #606aa1;
   }
 
   &.property {
-      color: lighten(#008080, 10%);
+      color: desaturate(@mira-variable, 20%);
+      background-color: fadeout(@mira-variable, 95%);
+      border-radius: 0.5em;
   }
 }
 
