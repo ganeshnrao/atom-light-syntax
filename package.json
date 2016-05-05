@@ -1,9 +1,9 @@
 {
-  "name": "atom-light-syntax",
+  "name": "mira-light-syntax",
   "theme": "syntax",
   "version": "0.28.0",
   "description": "A light syntax theme",
-  "repository": "https://github.com/atom/atom-light-syntax",
+  "repository": "https://github.com/ganeshnrao/mira-light-syntax",
   "license": "MIT",
   "engines": {
     "atom": ">0.40.0"
